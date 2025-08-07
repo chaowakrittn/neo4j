@@ -1,6 +1,11 @@
 # Cypher doc
 - [Doc](https://neo4j.com/docs/cypher-cheat-sheet/5/all/)
 
+# Export Data
+```
+CALL apoc.export.cypher.all(null, {stream:true, format: "cypher-shell"}) YIELD cypherStatements RETURN cypherStatements
+```
+
 # Reset DB
 ```
 // Delete All Nodes and Relationships
